@@ -1,0 +1,26 @@
+{% extends 'blog/base.html' %}
+
+{% load static %}
+
+{% block main %}
+
+
+<body>
+
+
+
+  <main id="main" data-aos="fade-in">
+
+    <!-- ======= Breadcrumbs ======= -->
+    {% include 'blog/components/_trainers_breadcrumbs.html' %}
+    <!-- End Breadcrumbs -->
+
+    <!-- ======= Trainers Section ======= -->
+    {% include 'blog/components/_trainers.html' %}
+    <!-- End Trainers Section -->
+
+  </main><!-- End #main -->
+
+
+</body>
+{% endblock main %}

@@ -1,0 +1,25 @@
+{% extends 'blog/base.html' %}
+
+{% load static %}
+
+{% block main %}
+
+
+<body>
+
+
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    {% include 'blog/components/_events_breadcrumbs.html' %}
+    <!-- End Breadcrumbs -->
+
+    <!-- ======= Events Section ======= -->
+    {% include 'blog/components/_events.html' %}
+    <!-- End Events Section -->
+
+</main><!-- End #main -->
+
+
+</body>
+{% endblock main %}

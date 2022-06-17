@@ -1,0 +1,26 @@
+{% extends 'blog/base.html' %}
+
+{% load static %}
+
+{% block main %}
+<body>
+
+
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    {% include 'blog/components/_course_details_breadcrumbs.html' %}
+    <!-- End Breadcrumbs -->
+
+    <!-- ======= Course Details Section ======= -->
+    {% include 'blog/components/_course_details.html' %}
+    <!-- End Course Details Section -->
+
+    <!-- ======= Course Details Tabs Section ======= -->
+    {% include 'blog/components/_course_details_tabs.html' %}
+    <!-- End Course Details Tabs Section -->
+
+</main>
+
+{% endblock main %}
+</body>

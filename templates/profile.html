@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    strong {
+    color: #05F0EA
+
+    }
+
+
+</style>
+<body>
+<main>
+    <div>
+        {% if request.user.first_name %}
+        Firstname: {{ request.user.first_name }}
+        {% else %}
+
+        Firstname: <strong>Null</strong>
+
+        {% endif %}
+    </div>
+
+    <div>
+        Username: {{ request.user.username }}
+    </div>
+    <div>
+        <button>
+            <a class="button" href="{% url 'logout' %}">Log out</a>
+        </button>
+    </div>
+</main>
+
+</body>
+</html>

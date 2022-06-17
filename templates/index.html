@@ -1,0 +1,49 @@
+{% extends 'blog/base.html' %}
+
+{% load static %}
+
+{% block main %}
+
+
+<body>
+
+<!-- ======= Hero Section ======= -->
+    {% include 'blog/components/_hero_section.html' %}
+<!-- End Hero -->
+
+<main id="main">
+
+
+    {% include 'blog/components/_about.html' %}
+
+
+    {% include 'blog/components/_counter.html' %}
+
+
+    <!-- ======= Why Us Section ======= -->
+    {% include 'blog/components/_why_us.html' %}<!-- End Why Us Section -->
+
+
+
+    <!-- ======= Popular Courses Section ======= -->
+    <section id="popular-courses" class="courses">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Courses</h2>
+                <p>Popular Courses</p>
+            </div>
+
+            {% include 'blog/components/_courses.html' %}
+        </div>
+    </section>
+    <!-- End Popular Courses Section -->
+
+    <!-- ======= Trainers Section ======= -->
+    {% include 'blog/components/_trainers.html' %}
+    <!-- End Trainers Section -->
+
+</main>
+
+</body>
+{% endblock main %}
